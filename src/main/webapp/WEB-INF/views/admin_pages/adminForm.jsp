@@ -45,13 +45,13 @@
   <h3>Address</h3>
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="Street"></label>
+    <label for="address.street">Street</label>
       <form:input type="text" class="form-control" path="address.street"
         placeholder="Street" />
       <form:errors path="address.street" cssClass="error" />
     </div>
     <div class="form-group col-md-4">
-      <label for="City"></label>
+    <label for="address.city">City</label>
       <form:input type="text" class="form-control" path="address.city"
         placeholder="City" />
       <form:errors path="address.city" cssClass="error" />
@@ -60,13 +60,13 @@
   </div>
   <div class="form-row">
     <div class="form-group col-md-4">
-      <label for="State"></label>
+    <label for="address.state">State</label>
       <form:input type="text" class="form-control" path="address.state"
         placeholder="State" />
       <form:errors path="address.state" cssClass="error" />
     </div>
     <div class="form-group col-md-4">
-      <label for="zipCode"></label>
+    <label for="address.zipCode">Zip Code</label>
       <form:input type="text" class="form-control" path="address.zipCode"
         placeholder="Zip Code" />
       <form:errors path="address.zipCode" cssClass="error" />

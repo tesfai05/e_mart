@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import edu.miu.e_mart.domain.CartItem;
 import edu.miu.e_mart.domain.Product;
 import edu.miu.e_mart.domain.ShoppingCart;
-import edu.miu.e_mart.service.definition.ICartItemService;
-import edu.miu.e_mart.service.definition.IProductService;
-import edu.miu.e_mart.service.definition.IShoppingCartService;
+import edu.miu.e_mart.service.ICartItemService;
+import edu.miu.e_mart.service.IProductService;
+import edu.miu.e_mart.service.IShoppingCartService;
 
 @Controller 
 public class ShoppingCartController {

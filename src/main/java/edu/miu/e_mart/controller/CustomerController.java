@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.miu.e_mart.domain.ARole;
 import edu.miu.e_mart.domain.Customer;
-import edu.miu.e_mart.service.definition.ICustomerService;
-import edu.miu.e_mart.service.implementation.CustomerServiceImp;
+import edu.miu.e_mart.service.ICustomerService;
+import edu.miu.e_mart.service.impl.CustomerServiceImp;
 
 @Controller
 public class CustomerController {

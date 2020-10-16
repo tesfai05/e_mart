@@ -3,8 +3,9 @@ import edu.miu.e_mart.domain.AnOrder;
 import edu.miu.e_mart.domain.CartItem;
 import edu.miu.e_mart.domain.Customer;
 import edu.miu.e_mart.domain.ShoppingCart;
-import edu.miu.e_mart.service.definition.IOrderService;
-import edu.miu.e_mart.service.definition.IShoppingCartService;
+import edu.miu.e_mart.service.IOrderService;
+import edu.miu.e_mart.service.IShoppingCartService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.miu.e_mart.domain.Admin;
 import edu.miu.e_mart.exception.AdminNotFoundException;
-import edu.miu.e_mart.service.definition.IAdminService;
+import edu.miu.e_mart.service.IAdminService;
 
 @Controller
 public class AdminController {

@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.miu.e_mart.domain.ACredential;
 import edu.miu.e_mart.repository.IAdminRepository;
-import edu.miu.e_mart.service.definition.IACredentialService;
-import edu.miu.e_mart.service.definition.IAddressService;
-import edu.miu.e_mart.service.definition.IAdminService;
-import edu.miu.e_mart.service.definition.ICustomerService;
+import edu.miu.e_mart.service.IACredentialService;
+import edu.miu.e_mart.service.IAddressService;
+import edu.miu.e_mart.service.IAdminService;
+import edu.miu.e_mart.service.ICustomerService;
 
 
 @Controller

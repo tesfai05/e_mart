@@ -1,7 +1,5 @@
 package edu.miu.e_mart.domain;
 
-
-
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -19,46 +17,26 @@ public class Payment {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer paymentId;
 
-	 @NotEmpty(message = "{validate.notEmpty}")
-	private String cardType ;
+	@NotEmpty(message = "{validate.notEmpty}")
+	private String cardType;
 
-	 @CreditCardNumber
-	 @Size(min=16,max=16, message = "Card should have 16 numbers!")
+	@CreditCardNumber
+	@Size(min = 16, max = 16, message = "Card should have 16 numbers!")
 	private String cartNumber;
 
-	 @NotEmpty(message = "{validate.notEmpty}")
+	@NotEmpty(message = "{validate.notEmpty}")
 	private String nameOnCard;
 
-	 @NotNull
+	@NotNull(message = "{validate.notNull}")
 	@DateTimeFormat(pattern = "mm/dd/yyyy")
 	private Date cardExpireDate;
-	 @NotNull(message = "{validate.notNull}")
-	private int cvv ;
+	@NotNull(message = "{validate.notNull}")
+	private Integer cvv;
 
 	private LocalDate paymentDate = LocalDate.now();
 
 	public LocalDate getPaymentDate() {
 		return paymentDate;
-	}
-
-	public void setPaymentDate(LocalDate paymentDate) {
-		this.paymentDate = paymentDate;
-	}
-
-	public String getCardType() {
-		return cardType;
-	}
-
-	public void setCardType(String cardType) {
-		this.cardType = cardType;
-	}
-
-	public int getCvv() {
-		return cvv;
-	}
-
-	public void setCvv(int ccv) {
-		this.cvv = ccv;
 	}
 
 	public Payment() {
@@ -74,8 +52,16 @@ public class Payment {
 		return paymentId;
 	}
 
-	public void setPaymentId(Integer id) {
-		this.paymentId = id;
+	public void setPaymentId(Integer paymentId) {
+		this.paymentId = paymentId;
+	}
+
+	public String getCardType() {
+		return cardType;
+	}
+
+	public void setCardType(String cardType) {
+		this.cardType = cardType;
 	}
 
 	public String getCartNumber() {
@@ -102,5 +88,18 @@ public class Payment {
 		this.cardExpireDate = cardExpireDate;
 	}
 
+	public Integer getCvv() {
+		return cvv;
+	}
+
+	public void setCvv(Integer cvv) {
+		this.cvv = cvv;
+	}
+
+	public void setPaymentDate(LocalDate paymentDate) {
+		this.paymentDate = paymentDate;
+	}
+
+	
 
 }

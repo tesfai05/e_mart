@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.miu.e_mart.domain.Category;
-import edu.miu.e_mart.service.definition.ICategoryService;
+import edu.miu.e_mart.service.ICategoryService;
 
 @Controller
 public class CategoryController {

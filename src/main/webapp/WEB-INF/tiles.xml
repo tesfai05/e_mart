@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
 	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
-	
+
 <tiles-definitions>
 
 	<!-- Public Base Definition -->
@@ -16,8 +16,8 @@
 		<put-attribute name="footer"
 			value="/WEB-INF/views/publicTiles/footer.jsp" />
 	</definition>
-	
-	
+
+
 	<!-- Admin Base Definition -->
 	<definition name="admin.layout"
 		template="/WEB-INF/views/publicTiles/layout.jsp">
@@ -30,8 +30,8 @@
 		<put-attribute name="footer"
 			value="/WEB-INF/views/publicTiles/footer.jsp" />
 	</definition>
-	
-	
+
+
 	<!-- Customer Base Definition -->
 	<definition name="customer.layout"
 		template="/WEB-INF/views/publicTiles/layout.jsp">
@@ -44,14 +44,14 @@
 		<put-attribute name="footer"
 			value="/WEB-INF/views/publicTiles/footer.jsp" />
 	</definition>
-	
 
-	<!-- Welcome Definition -->
+
+	<!-- Public Pages Definition -->
+
 	<definition name="home" extends="public.layout">
 		<put-attribute name="title" value="Welcom to E-Mart" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/public_pages/home.jsp" />
-<!-- <<<<<<< HEAD -->
 	</definition>
 
 	<definition name="login" extends="public.layout">
@@ -59,160 +59,87 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/public_pages/login.jsp" />
 	</definition>
-	
+
 	<definition name="public_error" extends="public.layout">
 		<put-attribute name="title" value="Error" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/public_pages/public_error.jsp" />
 	</definition>
-	
-	
-<!-- ======= -->
-<!-- 	</definition>
 
-	<definition name="login" extends="public.layout">
-		<put-attribute name="title" value="Login" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/public_pages/login.jsp" />
-	</definition>
-	
-	<definition name="public_error" extends="public.layout">
-		<put-attribute name="title" value="Error" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/public_pages/public_error.jsp" />
-	</definition>
-	
-	
-	
-	
 
-	Admin form Definition
+
+	<!-- Admin Pages Definition -->
+
 	<definition name="productForm" extends="admin.layout">
 		<put-attribute name="title" value="Add New Product" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/productForm.jsp" />
 	</definition>
-	<definition name="categoryForm" extends="admin.layout">
-		<put-attribute name="title" value="Add New Category" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/categoryForm.jsp" />
-	</definition>
-	<definition name="admin_products" extends="admin.layout">
-		<put-attribute name="title" value="List of Product" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/admin_products.jsp" />
-	</definition>
-	<definition name="order" extends="admin.layout">
-		<put-attribute name="title" value="List of Orders" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/order.jsp" />
-	</definition>
-	<definition name="admin_error" extends="admin.layout">
-		<put-attribute name="title" value="Error" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/admin_error.jsp" />
-	</definition>
-	<definition name="edit_product" extends="admin.layout">
-		<put-attribute name="title" value="Edit Product" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/edit_product.jsp" />
-	</definition>
-	<definition name="adminForm" extends="admin.layout">
-		<put-attribute name="title" value=" Add New Admin Form" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin-pages/adminForm.jsp" />
-	</definition>
-	
-	<definition name="review" extends="admin.layout">
-		<put-attribute name="title" value="Review" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/review.jsp" />
-		<put-attribute name="menu" value="" />
-	</definition>
-	<definition name="comment_product" extends="admin.layout">
-		<put-attribute name="title" value="Review" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/comment_product.jsp" />
-		<put-attribute name="menu" value="" />
-	</definition> 
->>>>>>> 27fec0bcc92e59cf2ea3c2a5100206473dc9f03f
-	
-	
-	
 
-<<<<<<< HEAD-->
-	<!-- Admin form Definition -->
-	<definition name="productForm" extends="admin.layout">
-		<put-attribute name="title" value="Add New Product" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/productForm.jsp" />
-	</definition>
 	<definition name="categoryForm" extends="admin.layout">
 		<put-attribute name="title" value="Add New Category" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/categoryForm.jsp" />
 	</definition>
+
 	<definition name="admin_products" extends="admin.layout">
 		<put-attribute name="title" value="List of Product" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/admin_products.jsp" />
 	</definition>
+
 	<definition name="order" extends="admin.layout">
 		<put-attribute name="title" value="List of Orders" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/order.jsp" />
 	</definition>
+
 	<definition name="admin_error" extends="admin.layout">
 		<put-attribute name="title" value="Error" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/admin_error.jsp" />
 	</definition>
+
 	<definition name="edit_product" extends="admin.layout">
 		<put-attribute name="title" value="Edit Product" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/edit_product.jsp" />
 	</definition>
+
 	<definition name="adminForm" extends="admin.layout">
 		<put-attribute name="title" value=" Add New Admin" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/adminForm.jsp" />
 	</definition>
-	
-	<definition name="review" extends="admin.layout">
-		<put-attribute name="title" value="Review" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/admin_pages/review.jsp" />
-		<put-attribute name="menu" value="" />
-	</definition>
+
 	<definition name="comment_product" extends="admin.layout">
 		<put-attribute name="title" value="Review" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/comment_product.jsp" />
-		<put-attribute name="menu" value="" />
 	</definition>
-	
-		<definition name="edit_admin" extends="admin.layout">
+
+	<definition name="edit_admin" extends="admin.layout">
 		<put-attribute name="title" value=" Edit Admin Form" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/admin_pages/edit_admin.jsp" />
 	</definition>
-	
-	<definition name="admins_list" extends="admin.layout">
-    <put-attribute name="title" value="List of Admins" />
-    <put-attribute name="content"
-      value="/WEB-INF/views/admin_pages/admins_list.jsp" />
-      
-      
-  </definition>
-	
 
-	<!-- customer form Definition -->
+	<definition name="admins_list" extends="admin.layout">
+		<put-attribute name="title" value="List of Admins" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin_pages/admins_list.jsp" />
+	</definition>
+
+
+	<!-- Customer Pages Definition -->
+
 	<definition name="customerForm" extends="public.layout">
 		<put-attribute name="title" value="New Customer Form" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/customer_pages/customerForm.jsp" />
 	</definition>
-	<definition name="customer_products" extends="customer.layout">
+	<definition name="customer_products"
+		extends="customer.layout">
 		<put-attribute name="title" value="List of Product" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/customer_pages/customer_products.jsp" />
@@ -222,49 +149,27 @@
 		<put-attribute name="content"
 			value="/WEB-INF/views/customer_pages/customer_error.jsp" />
 	</definition>
-	
+
 	<definition name="reviewForm" extends="customer.layout">
 		<put-attribute name="title" value="Review" />
 		<put-attribute name="content"
 			value="/WEB-INF/views/customer_pages/reviewForm.jsp" />
 		<put-attribute name="menu" value="" />
 	</definition>
-	
-	<definition name="displayProductsInCart" extends="customer.layout">
-    <put-attribute name="title" value="Items In Cart" />
-    <put-attribute name="content"
-      value="/WEB-INF/views/customer_pages/displayProductsInCart.jsp" />
-  </definition>
-  <definition name="customer_receipt" extends="customer.layout">
-    <put-attribute name="title" value="Receipt" />
-    <put-attribute name="content"
-      value="/WEB-INF/views/customer_pages/customer_receipt.jsp" />
-  </definition>
-	
-	
-	
-	</tiles-definitions>  
+
+	<definition name="displayProductsInCart"
+		extends="customer.layout">
+		<put-attribute name="title" value="Items In Cart" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/customer_pages/displayProductsInCart.jsp" />
+	</definition>
+	<definition name="customer_receipt"
+		extends="customer.layout">
+		<put-attribute name="title" value="Receipt" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/customer_pages/customer_receipt.jsp" />
+	</definition>
+
+</tiles-definitions>  
 		
-<!-- ======= -->
-	 <!-- customer form Definition -->
-<!--  	<definition name="customerForm" extends="public.layout">
-		<put-attribute name="title" value="New Customer Form" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/customer_pages/customerForm.jsp" />
-	</definition>
-	<definition name="customer_products" extends="customer.layout">
-		<put-attribute name="title" value="List of Product" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/customer_pages/customer_products.jsp" />
-	</definition>
-	<definition name="customer_error" extends="customer.layout">
-		<put-attribute name="title" value="Error" />
-		<put-attribute name="content"
-			value="/WEB-INF/views/customer_pages/customer_error.jsp" />
-	</definition>
-	
-	<definition name="review" extends="customer.layout">
-		<put-attribute name="title" value="Review" />
-		<put-attribute name="content" 
->>>>>>> 27fec0bcc92e59cf2ea3c2a5100206473dc9f03f -->
-		
+
